@@ -1,0 +1,11 @@
+in:
+  type: file
+  path_prefix: ./data
+  parser:
+    type: catch_data_exception
+
+filters:
+  - type: jruby_call_dataerror
+
+out:
+  type: 'stdout'
